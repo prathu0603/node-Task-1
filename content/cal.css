@@ -1,0 +1,51 @@
+body{
+    background-image: linear-gradient(to right, rgb(231, 50, 50) , rgb(20, 199, 145));
+}
+
+.calBox{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px , auto) repeat(5, 100px);
+}
+
+.calBox > button{
+
+    cursor: pointer;
+    border: 2px solid white;
+    outline: none;
+    font-size: 25px;
+    background-color: rgba(207, 236, 223, 0.445);
+}
+
+.calBox > button:hover{
+    background-color: white;
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+.output{
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.774);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .uptext{
+    color: rgba(255, 255, 255, 0.418);
+    font-size: 22px;
+}
+
+.output .downtext{
+    color: white;
+    font-size: 30px;
+}
